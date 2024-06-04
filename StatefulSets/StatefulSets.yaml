@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: blog-hung-mvc
-          image: vanhungdev/bloghung:b928a6e6
+          image: vanhungdev/bloghung:49d1ddcc
           ports:
             - containerPort: 5000
   volumeClaimTemplates: # (Phần mới) Khai báo PersistentVolumeClaim mẫu
