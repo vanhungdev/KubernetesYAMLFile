@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blog-hung-mvc
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: blog-hung-mvc
+  template:
+    metadata:
+      labels:
+        app: blog-hung-mvc
+    spec:
+      containers:
+      - name: blog-hung-mvc
+        image: vanhungdev/bloghung:b928a6e6
+        ports:
+        - containerPort: 5000
