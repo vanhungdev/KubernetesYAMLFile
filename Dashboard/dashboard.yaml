@@ -175,6 +175,7 @@ spec:
             - --enable-insecure-login
             - --insecure-bind-address=0.0.0.0
             - --insecure-port=9090
+            - --enable-skip-login
           volumeMounts:
             - mountPath: /tmp
               name: tmp-volume
